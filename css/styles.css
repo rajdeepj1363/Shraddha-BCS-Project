@@ -1,0 +1,185 @@
+body{
+    width:auto;
+    overflow-x: hidden;
+}
+
+.loginbox{
+    position:absolute;
+    top:50%;
+    left:50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 30vw;
+    border-style:solid;
+    border-width:2px;
+    text-align:center;
+    background-color:#f8f1f1;
+}
+.loginform input{
+    margin:20px auto;
+    padding:10px 20px;
+
+}
+.loginform button{
+    margin-bottom:20px;
+    padding:5px 10px;
+    background-color:#a3d2ca;
+}
+
+
+
+footer{
+    border-style:solid;
+    border-width:2px;
+    position:absolute;
+    bottom:0;
+    width:100vw;
+    background-color: #393e46;
+    
+}
+#footer{
+    border-style:solid;
+    border-width:2px;
+    position:relative;
+    bottom:0;
+    width:100vw;
+    background-color: #393e46;  
+}
+.footerinfo h2{
+    text-align:center;
+    color:#fff;
+}
+.footerinfo h4{
+    color:white;
+}
+.contactinfo{
+    font-size:18px;
+}
+.footerinfo p{
+    color:#e8e8e8
+}
+a{
+    text-decoration:none;
+}
+
+#backbtnDiv_Login{
+    position: absolute;
+    left:2%;
+    top:5%;
+
+}
+.backBtn_Login:hover{
+    transform: scale(1.5);
+}
+
+.basicinfo{
+    border-style:solid;
+    border-width:4px;
+    margin:100px 100px ;
+    padding:30px;
+} 
+.LoginTab{
+    background-color: white;
+    
+    
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+
+}
+.college-heading{
+    text-align: center;
+}
+.collegeMain{
+    position: absolute;
+    top:0;
+    left: 50%;
+    height: fit-content;
+    background-color: #fff;
+    -ms-transform:  translateY(-50%);
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    width: 75%;
+}
+
+#NavigationBar{
+    overflow: hidden;
+    background-color:#f58634;
+}
+#NavigationBar ul li{
+    display: inline;
+    float:left;
+    text-decoration: none;
+    margin-right:20px;
+    padding:5px;
+}
+#NavigationBar ul li a{
+    color:#09015f;
+}
+#content{
+    padding:10px;
+}
+
+.sidebar{
+    background-color: #364547;
+    width:180px;
+    float: left;
+    max-height: 100%;
+    height:100vh;
+
+}
+.sidebar ul{
+    color: #fff;
+}
+.sidebar ul li a{
+    color:white;
+    
+    
+}
+.sidebar ul li{
+    padding:2px;
+    
+}
+.sidebar ul li:hover{
+    opacity: 0.5;
+}
+.main{
+    margin-left: 180px;
+    padding-left:15px;
+}
+#student,#teacher{
+    border-style: none;
+    background-color: white;
+}
+#attendanceMain{
+    position:absolute;
+    top:50%;
+    left:50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    border-style:solid;
+    border-width:2px;
+    border-radius: 5px;
+}
+#attendanceMain form{
+    padding:20px;
+}
+#attendanceMain form select,#attendanceMain form input{
+    width:200px;
+    margin-bottom: 15px;
+}
+#attendanceMain form button{
+    border-style:none;
+    border-radius:10px;
+    background-color: #12d1b1;
+    color:#fff;
+    padding:5px 20px;
+}
+
+.eventgallery-img
+{
+    width:250px;
+    height:300px;
+}
