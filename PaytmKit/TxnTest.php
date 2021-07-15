@@ -2,19 +2,16 @@
 	header("Pragma: no-cache");
 	header("Cache-Control: no-cache");
 	header("Expires: 0");
-	if(isset($_POST['paynow']))
-	{
-		$amount = $_POST['amt'];
-	}
+	
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>Merchant Check Out Page</title>
+<title>Check Out Page</title>
 <meta name="GENERATOR" content="Evrsoft First Page">
 </head>
 <body>
-	<h1>Merchant Check Out Page</h1>
+	<h1>Fee Payment Check Out Page</h1>
 	<pre>
 	</pre>
 	<form method="post" action="pgRedirect.php">
@@ -39,12 +36,12 @@
 					<td><input id="CUST_ID" tabindex="2" maxlength="12" size="12" name="CUST_ID" autocomplete="off" value="CUST001"></td>
 				</tr>
 				<tr>
-					<td>3</td>
+					<td>2</td>
 					<td><label>INDUSTRY_TYPE_ID ::*</label></td>
 					<td><input id="INDUSTRY_TYPE_ID" tabindex="4" maxlength="12" size="12" name="INDUSTRY_TYPE_ID" autocomplete="off" value="Retail"></td>
 				</tr>
 				<tr>
-					<td>4</td>
+					<td>3</td>
 					<td><label>Channel ::*</label></td>
 					<td><input id="CHANNEL_ID" tabindex="4" maxlength="12"
 						size="12" name="CHANNEL_ID" autocomplete="off" value="WEB">

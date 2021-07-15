@@ -75,6 +75,7 @@
             echo "<script type='text/javascript'>alert('No such registration found');window.location='../admin.php';</script>";
         }
     }
+    
     if(isset($_POST['emailID']))
     {
         $title= $_POST['title'];

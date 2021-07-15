@@ -34,12 +34,12 @@
         border-style:solid;
         border-width:3px;
     }
-    .close_box,.close_box2{
+    .close_box,.close_box2,.close_box3{
         position:absolute;
         top:5%;
         right:2%;
     }
-    #insertTeacher,#deletionBox{
+    #insertTeacher,#deletionBox,#introduceFee{
       	background-color:#fff;
         position:absolute;
         top:50%;
@@ -67,6 +67,22 @@
     }
 </style>
 <body>
+
+    <form id="introduceFee" action="dbms/feepayment.php" method="post" style="display:none">
+      <button class="close_box3" type="button">X</button>
+      <label for="">Enter Fee Name</label><br>
+      <input type="text" name="FEE_NAME" required><br><br>
+      <label for="">Fee Amount</label><br>
+      <input type="text" name="FEE_AMT" required><br><br>
+      <label for="">SELECT DIVISION</label><br>
+      <select name="divisions" id="">
+      <option value="FY">FY</option>
+      <option value="SY">SY</option>
+      <option value="TY">TY</option>
+      </select><br><br>
+      <button name="introduceFee">INTRODUCE FEE</button>
+
+    </form>
 
   <form id="admissionVerify" action="dbms/validateUser.php" method="post" style="display:none">
     <button class="close_box" type="button">X</button>
@@ -141,6 +157,9 @@
             <li><a class="dropdown-item cursor-class deleteTeacher">Delete Teacher</a></li>
             <li><form class="dropdown-item cursor-class deleteTeacher" action="editInfo.php" method="post"><input type="text" value="teacher" name="user" hidden><button  class="editBtn">Edit Teacher Info</button></form> </li>
             <li><form class="dropdown-item cursor-class deleteTeacher" action="editInfo.php" method="post"><input type="text" value="student" name="user" hidden><button  class="editBtn">Edit Student Info</button ></form> </li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item cursor-class introduceFee">Introduce Fee</a></li>
+            
           </ul>
         </li>
         <li class="nav-item">
@@ -204,6 +223,14 @@
     document.querySelector(".close_box2").addEventListener("click",function(){
     document.querySelector("#insertTeacher").style.display="none";
 });
+
+      document.querySelector(".introduceFee").addEventListener("click",function(){
+      document.querySelector("#introduceFee").style.display="block";
+
+    });
+    document.querySelector(".close_box3").addEventListener("click",function(){
+        document.querySelector("#introduceFee").style.display="none";
+    });
 
 
 document.querySelector(".deleteStudent").addEventListener("click",function(){
