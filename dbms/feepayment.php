@@ -12,7 +12,7 @@
                 SELECT '$fee_name','$fee_amt',studentinfo.email, CONCAT(studentinfo.fname,' ',studentinfo.middleName,' ',studentinfo.lname) as Name FROM studentinfo 
                 WHERE studentinfo.STD_YEAR = '".$division."'";
         $result = $conn->query($sql);
-        header('Location:../admin.php?FeeSegment=Added');
+        header('Location:../admin.php?'.$fee_name.'=Added');
         
     }
     

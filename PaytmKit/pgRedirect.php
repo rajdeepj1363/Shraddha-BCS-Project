@@ -1,13 +1,13 @@
 <?php
-header("Pragma: no-cache");
-header("Cache-Control: no-cache");
-header("Expires: 0");
+
+
 // following files need to be included
 require_once("./lib/config_paytm.php");
 require_once("./lib/encdec_paytm.php");
 
 $checkSum = "";
 $paramList = array();
+
 
 $ORDER_ID = $_POST["ORDER_ID"];
 $CUST_ID = $_POST["CUST_ID"];
@@ -23,6 +23,7 @@ $paramList["INDUSTRY_TYPE_ID"] = $INDUSTRY_TYPE_ID;
 $paramList["CHANNEL_ID"] = $CHANNEL_ID;
 $paramList["TXN_AMOUNT"] = $TXN_AMOUNT;
 $paramList["WEBSITE"] = 'WEBSTAGING';
+
 
 
 $paramList["CALLBACK_URL"] = "http://localhost:10050/form/PaytmKit/pgResponse.php";
@@ -52,6 +53,7 @@ $checkSum = getChecksumFromArray($paramList,PAYTM_MERCHANT_KEY);
 			}
 			?>
 			<input type="hidden" name="CHECKSUMHASH" value="<?php echo $checkSum ?>">
+			
 			</tbody>
 		</table>
 		<script type="text/javascript">
